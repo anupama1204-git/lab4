@@ -8,9 +8,9 @@ jobs:
       node-version: [12.x]
       os: [windows-latest]
   steps:
-  - uses: actions/checkout@v1
+  - uses: actions/checkout@v3
   - name: Run node.js on ${{ matrix.os }}
-    uses: actions/setup-node@v1
+    uses: actions/setup-node@v3
     with:
       node-version: ${{ matrix.node-version }}
   - name: Install NPM Build
